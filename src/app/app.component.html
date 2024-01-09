@@ -95,30 +95,71 @@
  -->
 
  <!-- * -->
-<h1>test</h1>
- <img src="/src/assets/github-mark-white.png" alt="">
+<!-- 
+<header>
+  <div class="topnav" >
+    <a href="" class="active">Jarel</a>
+  
+  </div>
+  
+</header> -->
+
+
+<header>
+    <div class="inner">
+        <nav>
+            <a href="#" class="logo">Jarel</a>
+            <input type="checkbox" id="nav" /><label for="nav"></label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#projects">Projects</a>
+                    <ul>
+                        <li><a href="#">Group Distributor</a></li>
+                        <li><a href="#">Netflix Clone</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">TOP BUTTONNNNNNNNNNNNNNNNNN</button> -->
+
 <section class="sec-1 show-animate">
  <!-- https://www.youtube.com/watch?v=VjiWpGR82t0&t=187s -->
  <!-- https://www.youtube.com/watch?v=wrb7Gge9yoE&t=305s&ab_channel=Codecademy -->
   <!-- <h1 class="animate">Hi, I'm Jarel</h1> -->
-  <div class="intro-1">
+  <div class="introContainer">
     <div class="div-1">
-      <h1 class="animate">Hi, I'm Jarel</h1>
+      <h1 class="animate" id="introName">Hi, I'm Jarel</h1>
       <p class="animate">Front-End Angular Developer</p>
       +<p class="animate">Aspiring front-end developer showcasing a portfolio of four personal projects, demonstrating a commitment to creating visually appealing and functional web solutions.</p>
     </div>
-    <div class="div-2"></div>
+    <div class="div-2 div-1">
+      <h1>animate</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non officia corporis ipsa, autem rem et sit. Sequi ipsa deleniti laudantium dolorum quasi suscipit, soluta cumque optio et, debitis quia voluptate.</p>
+    </div>
 
   </div>
-  <p class="animate">Front-End Angular Developer</p>
-  <p class="animate" id="intro">Aspiring front-end developer showcasing a portfolio of four personal projects, demonstrating a commitment to creating visually appealing and functional web solutions.</p>
+  <!-- <p class="animate">Front-End Angular Developer</p> -->
+  <!-- <p class="animate" id="intro">Aspiring front-end developer showcasing a portfolio of four personal projects, demonstrating a commitment to creating visually appealing and functional web solutions.</p> -->
 
   <br>
+
   <div id="contact-info" class="animate">
-     <img cla src="../assets/LI-In-Bug.png" alt="">
-     <img src="../assets/github-mark-white.png" alt="">
+    <a href="https://www.linkedin.com/in/jarelsandersjs" target="_blank"><img src="../assets/LI-In-Bug.png" alt="" id="linkedIn"></a>
+    <a href="https://www.github.com/JarelSanders" target="_blank"><img src="../assets/github-mark-white.png" alt="" id="gHub"></a>
+     <!-- <img cla src="../assets/LI-In-Bug.png" alt=""> -->
+     <!-- <img src="../assets/github-mark-white.png" alt=""> -->
   </div>
- <p id="techIcons">Tech stack | 
+
+
+ <p id="techIcons" class="animate">Tech stack | 
   <img src="../assets/icons8-html5-48.png" alt=""> 
   <img src="../assets/icons8-css3-48.png" alt="">
   <img src="../assets/icons8-typescript-48.png" alt="">
@@ -132,8 +173,10 @@
   <p class="animate">Aspiring front-end developer showcasing a portfolio of four personal projects, demonstrating a commitment to creating visually appealing and functional web solutions.</p>
 </section>
 
+
+<!-- Projects -->
 <section class="sec-3">
-  <h1 class="animate">Projects</h1>
+  <h1 class="animate" id="projects">Projects</h1>
   <h1>is a website needed for each project</h1>
   <div class="project-1 animate">
     <!-- <h1 class="prjoectHead">Group Distributor</h1> -->
@@ -178,3 +221,7 @@
   </p>
 
 </section>
+
+
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">TOP BUTTONNNNNNNNNNNNNNNNNN</button> -->

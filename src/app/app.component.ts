@@ -114,3 +114,37 @@ window.addEventListener('scroll', debouncedScroll);
 // https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
 // https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
 // https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
+
+
+
+
+
+// Get the button
+// let mybutton: HTMLElement;
+// mybutton: document.getElementById("myBtn")!;
+
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+  // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // document,getElementById('')
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+
+// When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+  // For modern browsers
+  // document.body.scrollTop = 0;
+  // For older browsers that use document.documentElement
+  // document.documentElement.scrollTop = 0;
+// }
+
+// Wait for the DOM to be ready
+// document.addEventListener('DOMContentLoaded', () => {
+  // Select all sections when the DOM is ready
+//   sections = document.querySelectorAll('section') as NodeListOf<HTMLElement>;
+// });

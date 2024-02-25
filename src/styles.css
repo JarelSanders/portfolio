@@ -1,11 +1,3 @@
-
-/* 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-} */
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -154,7 +146,8 @@ label {
 h1{
     font-weight: 600;
     /* font-size: 90px; */
-    color: #fff;
+    /* color: #fff; */
+        color: #0ef;
     padding-bottom: 41px;
 }
 
@@ -163,13 +156,7 @@ p{
     color: #0ef;
     font-weight: 600;
     text-align: left;
-    /* border: 5px solid red; */
-    /* width: 38vw;
-    height: 25vh */
-    /* max-width: fit-content; */
-    /* height: ; */
-    line-height: 1em;
-    
+    line-height: 1em;   
 }
 
 *{
@@ -179,10 +166,6 @@ p{
 }
 
 .topnav{
-    /* border: 5px solid orange; */
-    /* position: fixed; Set the navbar to fixed position */
-    /* top: 0; Position the navbar at the top of the page */
-    width: 100%; /* Full width */
     font-size: 35px;
     color: #0ef;
     font-weight: 600;
@@ -192,9 +175,6 @@ p{
 }
 
 .active{
-    /* color: red; */
-    /* font: 200px; */
-    /* font-size: 100px; */
     text-decoration: none;
 }
 
@@ -212,17 +192,10 @@ p{
     border: 2px solid red;
 }
 
-.div-2{
-    /* border: 5px solid yellow; */
-}
-
-.sec
-
-
 
 #introName{
     border: 5px solid red;
-        font-size: 45px;
+    font-size: 45px;
     color: rgb(232, 240, 241);
     font-weight: 600;
     /* align-items: ; */
@@ -248,9 +221,6 @@ section{
 
 #contact-info{
     display: flex;
-    /* border: #0ef solid 5px; */
-    /* justify-content: left; */
-    /* align-items: flex-start; */
     margin-left: -1000pt;
     float: left;
 }
@@ -270,16 +240,8 @@ section{
 }
 
 #contact-info  a #gHub:hover{
-    /* background-color: white; */
     border: 3px solid #0ef;
     border-radius: 45px;
-}
-
-
-#contact-info img{
-    /* margin-right: 10px;
-    height: 30px; */
-    /* border: 5px solid red; */
 }
 
 
@@ -289,26 +251,10 @@ section{
 }
 
 #techIcons img{
-
     width:48px;
     height:48px;
-
-    /* border: #0f0 solid 5px; */
     margin-left: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 section .animate {
     transition: 1s;
@@ -316,17 +262,19 @@ section .animate {
 
 }
 
-.sec-1{
+.section{
     border: 5px solid green;
 }
 
-.sec-1 .animate{
+.section .animate{
     transform: translateX(-300%);
 }
 
-.sec-1.show-animate .animate{
+.section.show-animate .animate{
     transform: translateX(0);
 }
+
+
 
 .sec-2 .animate{
     transform: translateX(200%);
@@ -344,21 +292,10 @@ section .animate {
     height: 50vh;
 }
 
-.sec-3 .animate{
-    transform: translateX(-300%);
-}
 
-.sec-3.show-animate .animate{
-    transform: translateX(0);
-}
-
-.sec-3{
-
-}
-
-.div-11{
+.description{
     border: 5px solid white;
-        /* width: 50%; */ 
+        width: 50%; 
     float: left;
     padding: 20px;
     /* border: 2px solid red; */
@@ -376,22 +313,11 @@ section .animate {
     border: 5px sold green ;
 }
 
-.sec-4 .animate{
-    transform: translateX(200%);
-}
-
-.sec-4.show-animate .animate{
-    transform: translateX(0);
-}
 
 div img {
     border-radius: 10px;
     height: 20vh;
 }
-/* .prjoectHead{
-    margin: 0;
-    padding: 0;
-} */
 
 .wrapper{
     width: 100%;
@@ -401,77 +327,13 @@ div img {
     align-items: center;
     /* border: 5px solid red; */
 }
-
-/* .image{
-    width: 500px;
-    position: relative;
+.bottom-right{
+    border: 5px solid red;
+    width: 50%;
+    margin-left: 30%;
 }
 
-img{ 
-    width: 100%;
-    display: block;
-    margin: auto;
-} */
-
-
-/* .content{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-    
-    
-} */
-
-/* .content:hover{
-    opacity: 1;
-}
-
-
-.content h1{
-    margin-bottom: 15px;
-}
-
-
-.content > *{
-    transform: translateY(20px);
-    transition: transform 0.6s;
-} */
-
-
-section > h1{
-    /* font-size: 200em; */
-    font-size: 3em !important;
-    color: red;
-}
-
-
-.sec-2 p{
-    color: #0f0;
-}
-
-.sec-3{
-    border: 5px solid #0f0;
-}
-
-.sec-3 p{
-    color: #e0f;
-}
-
-.sec-4 .images img{
-    /* color: #ff0; */
-    /* max-width: 1400px; */
-    color: rgb(0, 255, 89);
-}
-
-.sec-5 a{
-    color: #ff0;
+.top-left{
+    border: 5px solid yellow;
+    width: 50%;
 }

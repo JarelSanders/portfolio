@@ -1,10 +1,13 @@
 html{
-    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 header {
     /* background: #181818; */
     background:rgb(29, 28, 28);
+     position: fixed;
+    top: 0;  
+    width: 100%;
     /* height: 200px; */
     /* height: -300px; */
     /* padding-top: 40px; */
@@ -35,6 +38,7 @@ h1 {
 }
 nav > ul {
     float: right;
+    /* border: 2px solid red; */
 }
 nav > ul > li {
     text-align: center;
@@ -42,12 +46,17 @@ nav > ul > li {
     margin-left: 70px;
 }
 nav > ul li ul li {
-    width: 100%;
+    width: 140px;
     text-align: left;
+    /* border: 5px solid red */
 }
 nav ul li:hover {
     cursor: pointer;
     position: relative;
+    color: red;
+    /* border: 5px solid red */
+    ;
+    /* width: 10%; */
 }
 nav ul li:hover > ul {
     display: block;
@@ -185,23 +194,23 @@ p{
 }
 
 .div-1{
-    border: 5px solid white;
+    /* border: 5px solid white; */
         width: 50%;
     float: left;
     padding: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
 #introName{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     font-size: 45px;
     color: rgb(232, 240, 241);
     font-weight: 600;
     /* align-items: ; */
 }
 
-section{
+section, .sec-2{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -209,6 +218,7 @@ section{
     min-height: 100vh;
     background: #1f242d;
     overflow-x:  hidden;
+    scroll-snap-align: start;
 
     /* border: 5px solid green; */
 }
@@ -263,7 +273,7 @@ section .animate {
 }
 
 .section{
-    border: 5px solid green;
+    /* border: 5px solid green; */
 }
 
 .section .animate{
@@ -294,7 +304,7 @@ section .animate {
 
 
 .description{
-    border: 5px solid white;
+    /* border: 5px solid white; */
         width: 50%; 
     float: left;
     padding: 20px;
@@ -310,7 +320,7 @@ section .animate {
 #group{
     height: 50vh;
     width: 58vw ;
-    border: 5px sold green ;
+    /* border: 5px sold green ; */
 }
 
 
@@ -328,12 +338,144 @@ div img {
     /* border: 5px solid red; */
 }
 .bottom-right{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 50%;
     margin-left: 30%;
 }
 
 .top-left{
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
     width: 50%;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    border: 5px solid green;
+    /* margin-top: -200px; */
+    padding-top: -200px;
+    margin-bottom: -100%;
+    padding-bottom: -100%;
+}
+
+#contact h1{
+    font-size: 30pt;
+}
+input{
+    font-size: 30px !important;
+    border-radius: 10px;
+    /* margin-bottom: 13px; */
+    margin-left: 35%;
+}
+
+
+textarea{
+    font-size: 30px !important;
+    border-radius: 10px;
+    /* margin-bottom: 13px; */
+    margin-left: 4%;
+}
+
+#labelEmail{
+    display: block;
+    display: flex;
+    color: #0ef ;
+    font-size: 22pt;
+    /* border: 5px solid red; */
+    width: 20%;
+    margin-left: 28%;
+    /* padding-top: 500px; */
+    /* height: 200px; */
+}
+ #labelMessage{
+    display: block;
+    display: flex;
+    color: #0ef ;
+    font-size: 22pt;
+    /* padding-right: 30%; */
+    /* border: 5px solid red; */
+    margin-top: 15px;
+    padding-left: 28%;
+ }
+
+ #labelName{
+    display: block;
+    display: flex;
+    color: #0ef ;
+    font-size: 22pt;
+    /* padding-right: 30%; */
+    /* border: 5px solid red; */
+    margin-top: 15px;
+    padding-left: 28%;
+ }
+
+  #contact_name{
+    /* display: block; */
+    /* display: flex; */
+    /* color: #0ef ; */
+    /* font-size: 22pt; */
+    /* padding-right: 30%; */
+    /* border: 5px solid red; */
+    /* margin-top: 15px; */
+    /* padding-left: 28%; */
+    margin-left: 75px
+ }
+
+#contactMessage{
+    /* margin-left: 0 !important; */
+}
+
+#contact_email{
+    /* border: 5px solid red;
+    display: flex;
+    margin-left: 1%;
+    margin-bottom: 19px; */
+}
+button{
+    display: block;
+    margin-left: 35%;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    color: #0ef;
+    background-color: #1f242d;
+    border: 2px solid white;
+    margin-top: 12px;
+    margin-left: 42%;
+}
+
+span{
+    /* display: flex; */
+    /* border: 5px solid green; */
+    color: red;
+    font-size: 22px;
+    position: absolute;
+    z-index: -1;
+    left: 960px;
+    width: 240px !important;
+        /* margin-top: 15px;
+    padding-left: 28%; */
+    
+}
+
+#emailError{
+    /* border: 5px solid green; */
+    /* display: block; */
+    /* position: absolute; */
+    left: 560px;
+    display: none;
+}
+
+#nameError{
+    /* border: 5px solid green; */
+    /* display: block; */
+    /* position: absolute; */
+    left: 890px;
+    display: none;
+}
+
+#messageError{
+    /* position: absolute; */
+    left: 1090px;
+    display: none;
 }

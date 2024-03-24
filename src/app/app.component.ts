@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http'; // You'll need this if you want to send data to a backend server
+import * as $ from 'jquery';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,47 +11,81 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  email: string = '';
+  name: string = '';
+  message: string = '';
+
+    // constructor(private http: HttpClient) {} // You'll need this if you want to send data to a backend server
+
+
+  // sendForm = this  
+  submitForm = (): void => {
+    console.log('Email:', this.email);
+    console.log('Message:', this.message);
+    console.log('name:', this.name);
+
+    // $('#contact_email').val() === ''  ? $('contact_name').val() === '' ? $('contactMessage').val() === '' ?  $('#nameError').css('display', 'inline') :  $('#nameError').css('display', 'none')             
+
+    // Check if the name field is empty
+    $('#contact_name').val() === '' ? $('#nameError').css('display', 'inline') : $('#nameError').css('display', 'none');
+    $('#contact_name').val() === '' ? $('#nameError').css('display', 'inline') : $('#nameError').css('display', 'none')
+    $('#contactMessage').val() === ''  ? $('#messageError').css('display', 'inline') : $('#messageError').css('display', 'none')
+    $('#contact_email').val() === ''  ? $('#emailError').css('display', 'inline') : $('#emailError').css('display', 'none')
+
+    // if (this.email === ''|| this.name === ''|| this.message === ''){
+        // (<HTMLElement>document.getElementById('emailError')).style.display = "inline";
+        // (<HTMLElement>document.getElementById('nameError')).style.display = "inline";
+        // (<HTMLElement>document.getElementById('messageError')).style.display = "inline";
+    //     alert('Fill out required infotmation ')
+    //     return
+
+    // }
+    // else{
+    //    (<HTMLElement>document.getElementById('emailError')).style.display = "none";
+    //    (<HTMLElement>document.getElementById('nameError')).style.display = "none";
+    //    (<HTMLElement>document.getElementById('messageError')).style.display = "none";
+
+    // }
+
+    // if (this.email === ''){
+    //   (<HTMLElement>document.getElementById('emailError')).style.display = "inline";
+    //   alert('Fill out required infotmation ')
+    // }else if(this.name === ''){
+    //   (<HTMLElement>document.getElementById('nameError')).style.display = "inline";
+    //    alert('Fill out required infotmation ')
+    // }else if (this.message === ''){
+    //   (<HTMLElement>document.getElementById('messageError')).style.display = "inline";
+    //   alert('Fill out required infotmation ')
+    // }
+    // else{
+    //    (<HTMLElement>document.getElementById('emailError')).style.display = "none";
+    //    (<HTMLElement>document.getElementById('nameError')).style.display = "none";
+    //    (<HTMLElement>document.getElementById('messageError')).style.display = "none";
+
+    // }
+
+
+
+
+
+    // $(emailContact) = true ? true : false
+
+
+    
+
+
+
+
+
+
+
+
+    // alert("Form submitted!");
+    // console.log('Form submitted!')
+  } 
 }
 
 
-// let sections = document.querySelectorAll('section');
-
-// window.onscroll  = () => {
-//   sections.forEach(sec => {
-//     let top = window.scrollY;
-//     let offset = sec.offsetTop - 150;
-//     let height = sec.offsetHeight;
-
-//     if (top >= offset && top < offset + height){
-//       sec.classList.add('show-animate')
-//     }
-    // If you weant to use repeating animation on sctoll, use this
-//     else {
-//       sec.classList.remove('show-animate')
-//     }
-//     }
-//   )
-// }
-
-// let sections = document.querySelectorAll('section');
-
-//  = () => {
-//   sections.forEach(sec => {
-//     let top = window.scrollY;
-//     let offset = sec.ofwindow.onscrollfsetTop - 150;
-//     let height = sec.offsetHeight;
-
-//     if(top >= offset && top < offset + height){
-//       sec.classList.add('show-animate');
-//     }
-
-//     else{
-//       sec.classList.remove('show-animate');
-//     }    
-//   })
-// }
-// Define sections as a NodeList
-// Define sections as a NodeList
 
 
 
@@ -97,54 +135,8 @@ const debouncedScroll = debounce(() => {
   });
 }, 20);
 
+
+
 // Add event listener for scroll
 window.addEventListener('scroll', debouncedScroll);
 
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-// https://www.youtube.com/watch?v=r1wDGIKmX6s&ab_channel=Codehal
-
-
-
-
-
-// Get the button
-// let mybutton: HTMLElement;
-// mybutton: document.getElementById("myBtn")!;
-
-// When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-  // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    // document,getElementById('')
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-  // For modern browsers
-  // document.body.scrollTop = 0;
-  // For older browsers that use document.documentElement
-  // document.documentElement.scrollTop = 0;
-// }
-
-// Wait for the DOM to be ready
-// document.addEventListener('DOMContentLoaded', () => {
-  // Select all sections when the DOM is ready
-//   sections = document.querySelectorAll('section') as NodeListOf<HTMLElement>;
-// });
